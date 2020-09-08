@@ -1,0 +1,24 @@
+{
+  "name": "to_do_app",
+  "version": "1.0.0",
+  "description": "Creation of a todo app using nodejs",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paula-gomes/To_do_App.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paula-gomes/To_do_App/issues"
+  },
+  "homepage": "https://github.com/paula-gomes/To_do_App#readme"
+}
