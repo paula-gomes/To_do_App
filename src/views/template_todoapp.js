@@ -2,14 +2,15 @@ function taskFunction(tasks) {
 
     let cardsTasks = '';
 
-        tasks.forEach( task => {
-            
-        
+    tasks.forEach(task => {
+
+
         cardsTasks +=
             `<div class="card m-5" style="width: 18rem;">
             <div class="card-body">
-                <h5 class="card-title">${task.title}</h5>
-                <p class="card-text">${task.details}</p>
+                <h5 class="card-title">${task.title_task}</h5>
+                <p class="card-text">${task.details_task}</p>
+                <p class= "card-text">${task.id_status}</p>
             </div>
         </div>`
     });
