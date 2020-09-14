@@ -11,6 +11,9 @@ function taskFunction(tasks) {
                 <h5 class="card-title">${task.title_task}</h5>
                 <p class="card-text">${task.details_task}</p>
                 <p class= "card-text">${task.id_status}</p>
+                <button type="button" class="btn btn-light">Editar</button>
+                <button type="button" class="btn btn-light">Arquivar</button>
+
             </div>
         </div>`
     });
