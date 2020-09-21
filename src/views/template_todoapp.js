@@ -7,14 +7,13 @@ function taskFunction(tasks) {
 
         cardsTasks +=
             `<div class="cards" class="card m-5" style="width: 18rem;">
-            <div class="card-body">
+                <div class="card-body">
                 <h5 class="card-title">${task.title_task}</h5>
                 <p class="card-text">${task.details_task}</p>
                 <p class= "card-text">${task.id_status}</p>
                 <button type="button" class="btn btn-light">Editar</button>
                 <button class="deleteTask" type="button" class="btn btn-light">Deletar</button>
-
-            </div>
+                </div>
         </div>`
     });
 

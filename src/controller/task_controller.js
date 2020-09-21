@@ -19,6 +19,17 @@ class TaskController{
     });      
 
     }
+
+    static removeTask(){
+
+        return ( (req,res) => {
+
+        const taskDaoInstance = new taskDao(db);
+        taskDaoInstance.removeTasks(req.params.id_tasks)
+                        .then(res.status(200).send('task deleted'))
+                        .catch(err => console.log(err));
+        });
+    }
 }
 
 module.exports= TaskController;

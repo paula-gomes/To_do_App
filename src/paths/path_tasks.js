@@ -1,17 +1,11 @@
 const { reset } = require('nodemon');
 const  taskShow = require('../controller/task_controller');
 const db = require ('../config/db_close_todoapp');
-const TaskDao = require('../DAO/tasks_DAO');
+const taskController = require('../controller/task_controller');
 
 module.exports = (app) => {
 
-    app.get('/', taskShow.showTask());
+    app.get('/', taskController.showTask());
 
-    app.delete('/:id', (req,res) =>{
-        const id = req.params.id;
-        const newTask = new TaskDao;
-        newTask.removeTasks(id)
-                        .then(() => { res.send('deleted')})
-                        .catch( err => console.log(err));
-    });
+    app.delete('/:id', taskController.removeTask());
 };

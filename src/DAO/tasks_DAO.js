@@ -21,11 +21,12 @@ class TaskDao {
     removeTasks(id_tasks) {
 
         return new Promise((resolve, reject) => {
-            this._db.get(
-                `DELETE FROM tasks WHERE id = ? `,
+            this._db.run(
+                `DELETE FROM tasks WHERE id_tasks = ? `,
                 [id_tasks],
                 (err) => {
                     if (err) {
+                        console.log(err);
                         return reject('Not able to delete task');
                     }
                     return resolve();
