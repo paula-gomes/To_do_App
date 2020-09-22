@@ -5,7 +5,7 @@ Creation of a todo app using nodejs and Data Access Object Pattern (DAO pattern)
 
 ```shell
 $ git clone https://github.com/paula-gomes/To_do_App.git
- npm init
+ 
  npm i express --save
  npm i nodemon --save-dev
  npm i sqlite3@latest

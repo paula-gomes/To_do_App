@@ -1,7 +1,7 @@
 const sqlite = require('sqlite3').verbose();
 const db = new sqlite.Database('db_todo.db');
 
-const TASK_SCHEMA = `
+const TASK_SCHEMA = ` 
 CREATE TABLE IF NOT EXISTS tasks (
         id_tasks INTEGER PRIMARY KEY AUTOINCREMENT,
         title_task VARCHAR(100),
