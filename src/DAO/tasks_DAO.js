@@ -18,12 +18,12 @@ class TaskDao {
         });
     }
 
-    removeTasks(id_tasks) {
+    removeTasks(id) {
 
         return new Promise((resolve, reject) => {
             this._db.run(
                 `DELETE FROM tasks WHERE id_tasks = ? `,
-                [id_tasks],
+                [id],
                 (err) => {
                     if (err) {
                         console.log(err);
