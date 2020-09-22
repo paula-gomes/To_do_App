@@ -2,17 +2,17 @@ function taskFunction(tasks) {
 
     let cardsTasks = '';
 
-    tasks.forEach(task => {
+    tasks.forEach(task => { 
 
 
         cardsTasks +=
             `<div class="cards" class="card m-5" style="width: 18rem;">
-                <div class="card-body">
+                <div class="card-body" data-id-tasks="${task.id_tasks}">
                 <h5 class="card-title">${task.title_task}</h5>
                 <p class="card-text">${task.details_task}</p>
                 <p class= "card-text">${task.id_status}</p>
                 <button type="button" class="btn btn-light">Editar</button>
-                <button class="deleteTask" type="button" class="btn btn-light">Deletar</button>
+                <button type="button" class="btn btn-light" onclick="deleteTask(event)">Deletar</button>
                 </div>
         </div>`
     });
