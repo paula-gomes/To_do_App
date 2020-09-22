@@ -32,6 +32,13 @@ After setting up all dependecies, access on your local network :
 
 http://localhost:3000/
 
+### Suggested Tool
+
+* Insomnia Rest : provides a great comunication with ToDo app 
+##### Link - https://insomnia.rest/download/
+
+
+
 # Project Status
 
-Still being developed
+Still being developed and accepting contributions
