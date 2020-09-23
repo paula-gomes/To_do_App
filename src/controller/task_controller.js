@@ -25,8 +25,8 @@ class TaskController{
         return ( (req,res) => {
 
         const taskDaoInstance = new taskDao(db);
-        taskDaoInstance.removeTasks(req.params.id_tasks)
-                        .then(() => res.status(200).send(console.log('requisicao ok')))
+        taskDaoInstance.removeTasks(req.params.id)
+                        .then(() => res.status(200).send.end())
                         .catch(err => console.log(err));
         });
     }
