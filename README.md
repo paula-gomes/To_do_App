@@ -17,7 +17,7 @@ By doing that you will clone the repository and install its dependencies
 
 --CRUD operations--
 
-* Add tasks (Create) -- coming soon
+* Add tasks (Create) 
 
 * Display tasks (Read)
 
