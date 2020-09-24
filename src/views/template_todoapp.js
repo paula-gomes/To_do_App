@@ -32,18 +32,18 @@ function taskFunction(tasks) {
     </nav>
     <div class="d-flex justify-content-center">
         <div class="w-50 p-4 border rounded shadow-sm"> 
-            <form class="flex-fill">
+            <form class="flex-fill" action = "/tasks" method ="post">
                 <div class="form-group">
                     <label for="tituloTarefa"><b>Título:</b></label>
-                    <input type="text" class="form-control" id="tituloTarefa" placeholder="Título da tarefa">
+                    <input type="text" name = "titleTask" class="form-control" id="tituloTarefa" placeholder="Título da tarefa" enctype = "application/x-www-form-urlencoded">
                 </div>
                 <div class="form-group">
                     <label for="descricaoTarefa"><b>Descrição:</b></label>
-                    <textarea class="form-control" id="descricaoTarefa" rows="3" placeholder="Insira a descrição da tarefa"></textarea>
+                    <textarea name = "descTask" class="form-control" id="descricaoTarefa" rows="3" placeholder="Insira a descrição da tarefa"></textarea>
                 </div>
                 <div class="form-group">
                 <label for="statusTarefa"><b>Status</b></label>
-                <input type="text" class="form-control" id="statusTarefa" placeholder="Status da Tarefa">               
+                <input type="text" name ="statusTask" class="form-control" id="statusTarefa" placeholder="Status da Tarefa">               
                 </div>
                 <button id="addTask" type="submit" class="btn btn-secondary" mt-2>Adicionar tarefa</button>
             </form>

@@ -29,12 +29,29 @@ class TaskDao {
                         console.log(err);
                         return reject('Not able to delete task');
                     }
-                    return resolve();
+                        return resolve();
                 }
             );
         });
         
     };
+
+    addTasks(title,desc,status){
+
+        return new Promise ((resolve, reject) => {
+            this._db.run(
+                `INSERT INTO tasks(title_task,details_task,id_status) VALUES (?, ?, ?)`, 
+                [title,desc,status],
+                (err) => {
+                    if (err) {
+                        console.log(err)
+                        return reject('Not able to add task')
+                    }
+                        return resolve ();
+                }
+            );
+        });
+    };
 }
 
-module.exports = TaskDao;
+module.exports = TaskDao; 

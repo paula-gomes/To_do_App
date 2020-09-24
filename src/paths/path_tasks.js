@@ -8,4 +8,7 @@ module.exports = (app) => {
     app.get('/', taskController.showTask());
 
     app.delete('/:id', taskController.removeTask());
+
+    app.post('/tasks', taskController.addTask());
+
 };
