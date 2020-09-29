@@ -52,6 +52,24 @@ class TaskDao {
             );
         });
     };
+
+    updateTasks(title,desc,status,id){
+
+        return new Promise ((resolve,reject)=>{
+            this._db.run(
+                `UPDATE tasks SET title=?, desc=?, status =? WHERE id =?`,
+                [title,desc,status,id],
+                (err) => {
+                    if (err) {
+                        console.log(err)
+                        return reject('Not able to update task')
+                    }
+                        return resolve ();
+                }
+
+            );
+        });
+    };
 }
 
 module.exports = TaskDao; 

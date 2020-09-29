@@ -38,6 +38,17 @@ class TaskController {
                 .catch((err) => {console.log(err);});
         });
     };
+
+    static updateTask(){
+
+        return ((req,res)=>{
+
+            const taskDaoInstance = new taskDao(db);
+            taskDaoInstance.updateTasks(req.body.titleTask, req.body.descTask, req.body.statusTask,req.params.id)
+                .then(()=>res.redirect('/'))
+                .catch((err) => { console.log (err);});
+        });
+    };
 }
 
 module.exports = TaskController;

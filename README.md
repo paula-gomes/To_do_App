@@ -21,9 +21,9 @@ By doing that you will clone the repository and install its dependencies
 
 * Display tasks (Read)
 
-* Edit tasks (Update) -- coming soon
+* Edit tasks (Update) 
 
-* Delete tasks (Delete) - require npm i cors in order to realize a Fetch API request
+* Delete tasks (Delete) 
  
 
 # Get it tested
