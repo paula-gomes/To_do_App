@@ -13,7 +13,8 @@ function updateTask(event) {
             let titleTask = card.childNodes[0].nextSibling.innerText;
             let descTask = card.childNodes[2].nextSibling.innerText;
             let statusTask = card.childNodes[4].nextSibling.innerText;
-            console.log(idTask);
+
+            form[1].value = idTask;
             form[2].value = titleTask;
             form[3].value = descTask;
             form[4].value = statusTask;

@@ -57,7 +57,7 @@ class TaskDao {
 
         return new Promise ((resolve,reject)=>{
             this._db.run(
-                `UPDATE tasks SET title=?, desc=?, status =? WHERE id_tasks =?`,
+                `UPDATE tasks SET title_task=?, details_task=?, id_status =? WHERE id_tasks =?`,
                 [title,desc,status,id],
                 (err) => {
                     if (err) {
