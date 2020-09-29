@@ -8,7 +8,7 @@ const port = process.env.PORT || 3000;
 app.use('/static', express.static('src/public'));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(methodOverRide(function (req, res) {
-  if (req.body && typeof req.body === 'object' && '_method' in req.body && req.body.idTask !== "null") {
+  if (req.body && typeof req.body === 'object' && '_method' in req.body && req.body.idTask != "null") {
     var method = req.body._method
     delete req.body._method
     return method

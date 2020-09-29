@@ -11,6 +11,6 @@ module.exports = (app) => {
 
     app.post('/tasks', taskController.addTask());
 
-    app.put('/update/:id',taskController.updateTask());
+    app.put('/tasks/:id',taskController.updateTask());
     
 };

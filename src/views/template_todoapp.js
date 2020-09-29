@@ -10,8 +10,8 @@ function taskFunction(tasks) {
                 <h5 class="card-title" data-id-title = "${task.title_task}">${task.title_task}</h5>
                 <p class="card-text">${task.details_task}</p>
                 <p class= "card-text">${task.id_status}</p>
-                <button type="button" class="btn btn-light editTask" onclick="updateTask(event)">Editar</button>
-                <button type="button" class="btn btn-light" onclick="deleteTask(event)">Deletar</button>
+                <button type="submit" class="btn btn-light editTask" onclick="updateTask(event)">Editar</button>
+                <button type="submit" class="btn btn-light" onclick="deleteTask(event)">Deletar</button>
                 </div>
         </div>`
     });
@@ -31,7 +31,7 @@ function taskFunction(tasks) {
     </nav>
     <div class="d-flex justify-content-center">
         <div class="w-50 p-4 border rounded shadow-sm"> 
-            <form id="formTask" class="flex-fill" action = "/tasks" method ="post">
+            <form id="formTask" class="flex-fill" action="/tasks" method="post">
             <input type="hidden" name="_method" value="PUT">
             <input type="hidden" name="idTask" value="null">
                 <div class="form-group">

@@ -44,7 +44,7 @@ class TaskController {
         return ((req,res)=>{
 
             const taskDaoInstance = new taskDao(db);
-            taskDaoInstance.updateTasks(req.body.titleTask, req.body.descTask, req.body.statusTask,req.params.id)
+            taskDaoInstance.updateTasks(req.body.titleTask, req.body.descTask, req.body.statusTask,req.params.idTask)
                 .then(()=>res.redirect('/'))
                 .catch((err) => { console.log (err);});
         });
