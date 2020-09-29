@@ -18,7 +18,6 @@ function updateTask(event) {
             form[3].value = descTask;
             form[4].value = statusTask;
             form.action = `/tasks/${idTask}`;
-        });
-        
+        })
     })
 };
